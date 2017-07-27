@@ -1,5 +1,8 @@
 require 'sinatra'
 get '/' do
-  @words = params[:words]
   erb :index
+end
+get '/solution' do
+  @words = params[:words]
+  erb :solution
 end

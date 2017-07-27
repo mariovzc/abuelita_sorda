@@ -1,12 +1,6 @@
 <h1>Abuela Sorda</h1>
 
-<% if @words == @words.mb_chars.upcase.to_s %>
-  <h1>Ahhh si, manzanas!</h1>
-<% else %>
-  <h1>Habla más duro mijito</h1>
-<% end %>
-
-<form action="/">
+<form action="/solution">
   <label for="">Di algo Abuela:</label>
   <input type="text" name="words">
   <input type="submit" value="Dilo!">
